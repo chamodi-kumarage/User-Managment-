@@ -51,13 +51,20 @@ This system supports **role-based login**, **protected routes**, **persistent se
 ---
 
 ## 📷 Screenshots  
-(Add your project screenshots here)
+![Uploading image.png…]()
+
 
 ---
 
-## 📦 Installation
+## ⚙️ Installation & Run Guide
 
-### Backend
+### 🔹 Backend Setup
 ```bash
 cd backend
-mvn spring-boot:run
+mvn clean package -U
+java -jar target/backend-0.0.1-SNAPSHOT.jar
+
+### 🔹 Frontend setup and start
+npm install
+npm start
+
