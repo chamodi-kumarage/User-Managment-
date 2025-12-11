@@ -8,7 +8,7 @@ This system supports **role-based login**, **protected routes**, **persistent se
 
 ### 🔐 Authentication & Authorization
 - User **Login & Signup**
-- **Role-based access control** (Admin / Manager / User / Custom Roles)
+- **Role-based access control** (Admin / User / Custom Roles)
 - JWT-based authentication with **auto session handling**
 
 ### 👥 User Sessions
