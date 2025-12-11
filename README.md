@@ -39,20 +39,12 @@ This system supports **role-based login**, **protected routes**, **persistent se
 ## 🛠 Tech Stack
 ### Frontend  
 - React JS  
-- Axios  
-- React Router DOM  
 
 ### Backend  
 - Spring Boot  
 - Spring Security  
 - JWT  
 - MySQL  
-
----
-
-## 📷 Screenshots  
-![Uploading image.png…]()
-
 
 ---
 
