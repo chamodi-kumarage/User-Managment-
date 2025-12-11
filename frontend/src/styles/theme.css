@@ -1,0 +1,21 @@
+:root{
+  --bg:#f8fbff;
+  --text:#0f172a;
+  --muted:#64748b;
+  --card:#ffffff;
+  --border:#e6ecf7;
+  --shadow:0 8px 22px rgba(20,33,61,.08);
+
+  /* Pastel accents */
+  --p-blue:#d5e4ff; --p-indigo:#ddd6ff; --p-violet:#eed9ff; --p-purple:#f4dcff;
+  --p-pink:#ffd9ec; --p-rose:#ffd6de; --p-red:#ffdada; --p-orange:#ffe1c8;
+  --p-amber:#ffecb8; --p-yellow:#fff7c2; --p-lime:#f0ffc8; --p-green:#dcffe9;
+  --p-teal:#cffcf2; --p-cyan:#c9f2ff; --p-mint:#defef0; --p-aqua:#c9fff5;
+}
+
+html, body { background:var(--bg); color:var(--text); }
+:where(.nb-card){ background:var(--card); color:var(--text); border:1px solid var(--border); }
+:where(.nb-toolbar){ background:var(--card); color:var(--text); border-bottom:1px solid var(--border); }
+:where(.nb-table){ background:var(--card); color:var(--text); }
+:where(.nb-input, .nb-select, .nb-search){ background:var(--card); color:var(--text); border:1px solid var(--border); }
+:where(.nb-btn){ color:var(--text); }

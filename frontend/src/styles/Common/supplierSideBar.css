@@ -1,0 +1,16 @@
+/* Reuse the exact styling from the admin sidebar */
+@import "./adminSideBar.css";
+
+/* Optional: theme overrides ONLY for the supplier sidebar.
+   By scoping to .ssb__theme, we avoid changing the owner's sidebar. */
+.ssb__theme {
+  /* Uncomment to give suppliers a distinct accent color
+     while keeping everything else identical. */
+  /* --asb-accent: #f59e0b;  amber/orange accent (matches your app) */
+  /* --asb-accent: #22c55e;  green accent (alternative) */
+}
+
+/* If you want a label tweak for the supplier brand, keep it subtle: */
+.ssb__theme .asb__brandText h1 {
+  /* font-weight: 800; */
+}

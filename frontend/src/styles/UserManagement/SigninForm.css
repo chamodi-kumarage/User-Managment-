@@ -1,0 +1,140 @@
+/* Container */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffd740, #ffb300);
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.signin-card {
+  display: flex;
+  width: 900px;
+  max-width: 95%;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Right side (Form) */
+.signin-right {
+  flex: 1.2;
+  padding: 50px 40px;
+}
+
+.signin-right h2,
+.signin-right p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.signin-right h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* Form */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.input-group:hover {
+  border-color: #ffb300;
+}
+
+.input-group i {
+  font-size: 18px;
+  color: #888;
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 15px;
+  padding: 5px;
+}
+
+/* Button */
+.signin-btn {
+  background: linear-gradient(135deg, #34d399, #60a5fa); /* Green and blue gradient */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signin-btn:hover {
+  background: linear-gradient(135deg, #22c55e, #3b82f6); /* Darker green and blue on hover */
+}
+
+/* Footer text */
+.signin-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+
+.signin-footer a {
+  color: #60a5fa; /* Blue color for links */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signin-footer a:hover {
+  text-decoration: underline;
+  color: #3b82f6; /* Darker blue on hover */
+}
+
+/* error message box */
+.error {
+  background: #ffe8e8;
+  color: #a40000;
+  border: 1px solid #ffbcbc;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* 2FA choose + OTP forms (match your form look) */
+.choose-2fa,
+.otp-form {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 520px;
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

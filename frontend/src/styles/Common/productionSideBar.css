@@ -1,0 +1,10 @@
+/* Reuse all admin sidebar styles */
+@import "./adminSideBar.css";
+
+/* Optional: give Production a distinct accent (kept off by default) */
+.psb__theme {
+  /* Uncomment ONE if you want a unique accent for production staff */
+  /* --asb-accent: #f59e0b;  amber */
+  /* --asb-accent: #22c55e;  green */
+  /* --asb-accent: #38bdf8;  sky blue */
+}

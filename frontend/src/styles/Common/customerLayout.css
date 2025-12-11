@@ -1,0 +1,18 @@
+/* Two-column app layout: fixed-width sidebar + flexible content */
+.cs__layout {
+  display: grid;
+  grid-template-columns: 280px 1fr; /* match your sidebar width */
+  min-height: 100vh;
+  background: #fffdf0; /* soft light bg so empty states still look okay */
+}
+
+/* Content pane should be scrollable and padded */
+.cs__content {
+  padding: 16px;
+  overflow: auto;
+}
+
+/* If your global CSS makes <main> display:flex or similar, cancel it here */
+.cs__content * {
+  box-sizing: border-box;
+}

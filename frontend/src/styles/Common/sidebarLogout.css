@@ -1,0 +1,33 @@
+.asb__logout {
+  margin-top: auto; /* push to bottom */
+  border-top: 1px solid var(--asb-divider, #333);
+  padding: 0.75rem 1rem;
+}
+
+.asb__logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--asb-text, #e8edf3);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  text-align: left;
+  transition: background 0.2s, color 0.2s;
+}
+
+.asb__logoutBtn:hover {
+  background: var(--asb-hover, #1b2430);
+  color: #ff6666; /* highlight logout in red */
+}
+
+.asb__logoutBtn .asb__icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,103 @@
+.aum__wrap { display: grid; gap: 16px; padding: 16px; }
+.aum__header { display:flex; align-items:center; justify-content:space-between; }
+.aum__header h2 { margin: 0 0 4px; }
+.aum__header p { margin: 0; color: #6b7280; }
+.aum__header--sticky { position: sticky; top: 0; background: #fffdf0; z-index: 5; padding: 8px 16px; border-bottom: 1px solid #f3f4f6; }
+
+.aum__card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+.aum__cardHead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.aum__cardHead h3{margin:0}
+
+.aum__form .aum__grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 12px;
+}
+@media (max-width: 900px) {
+  .aum__form .aum__grid { grid-template-columns: 1fr; }
+}
+
+.aum__field { display: grid; gap: 6px; }
+.aum__field label { font-size: 13px; color: #6b7280; }
+.aum__field input, .aum__field select {
+  background: #fff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+}
+.aum__field input:focus, .aum__field select:focus {
+  border-color: #ffd633;
+  box-shadow: 0 0 0 4px rgba(255, 214, 51, 0.25);
+}
+
+.aum__actions { display: flex; gap: 8px; margin-top: 8px; }
+.aum__btn {
+  padding: 10px 14px; border-radius: 12px; border: 1px solid #d1d5db;
+  background: #f9fafb; cursor: pointer; font-weight: 600;
+}
+.aum__btn--primary { background: #ffd633; border-color: #f0c800; color: #111827; }
+.aum__btn--ghost { background: #fff; }
+
+.aum__alert {
+  padding: 10px 12px; border-radius: 12px; margin-top: 8px; font-size: 14px;
+}
+.aum__alert--err { background: #fee2e2; border: 1px solid #fca5a5; color: #7f1d1d; }
+.aum__alert--ok  { background: #ecfccb; border: 1px solid #a3e635; color: #365314; }
+
+.aum__tableHeader {
+  display: flex; gap: 12px; align-items: center; justify-content: space-between; margin-bottom: 8px;
+}
+.aum__filters { display: flex; gap: 8px; width: 100%; }
+.aum__search, .aum__roleFilter {
+  border: 1px solid #d1d5db; border-radius: 10px; padding: 8px 12px;
+}
+.aum__search { flex: 1; }
+
+.aum__tableWrap { overflow: auto; }
+.aum__table { width: 100%; border-collapse: collapse; }
+.aum__table th, .aum__table td {
+  padding: 10px 8px; border-bottom: 1px solid #e5e7eb; text-align: left;
+}
+.aum__empty { color: #6b7280; text-align: center; }
+
+.aum__pill {
+  display: inline-block; padding: 3px 8px; border-radius: 999px;
+  background: #f3f4f6; border: 1px solid #e5e7eb; font-size: 12px; font-weight: 600;
+}
+.aum__pill--owner { background:#fef9c3; border-color:#fde68a; }
+.aum__pill--supplier { background:#e0f2fe; border-color:#bae6fd; }
+.aum__pill--delivery { background:#dcfce7; border-color:#bbf7d0; }
+.aum__pill--production { background:#ede9fe; border-color:#ddd6fe; }
+.aum__pill--quality { background:#ffe4e6; border-color:#fecdd3; }
+.aum__pill--customer { background:#f3f4f6; border-color:#e5e7eb; }
+
+.aum__actionsCell { display: flex; gap: 8px; }
+.aum__chipBtn {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.aum__chipBtn--edit { background: #16a34a; color: #fff; }   /* green */
+.aum__chipBtn--danger { background: #dc2626; color: #fff; } /* red */
+
+.aum__muted { color:#6b7280 }
+.aum__loading { padding: 8px; color: #6b7280; }
+
+/* inline error text under fields */
+.aum__errText {
+  color: #b91c1c;
+  font-size: 12px;
+  margin-top: 4px;
+}

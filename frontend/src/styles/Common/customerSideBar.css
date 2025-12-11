@@ -1,0 +1,7 @@
+/* Reuse the shop owner sidebar styles */
+@import "./adminSideBar.css";
+
+/* Optional: accent override for customer sidebar */
+.csb__theme {
+  /* --asb-accent: #0ea5e9; light blue for customers */
+}

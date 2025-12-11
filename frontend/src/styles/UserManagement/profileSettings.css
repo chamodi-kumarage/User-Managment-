@@ -1,0 +1,148 @@
+/* ---------- Base layout (unchanged semantics) ---------- */
+.ps__container {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+}
+
+.ps__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ps__titleGroup h2 { margin: 0 0 4px; }
+
+/* Grid */
+.ps__grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+}
+@media (max-width: 1024px) {
+  .ps__grid { grid-template-columns: 1fr; }
+}
+
+.ps__card {
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  border: 1px solid transparent; /* color set by theme */
+}
+
+/* Form layout */
+.ps__form .ps__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.ps__form .ps__row:nth-child(3) { grid-template-columns: 1fr; }
+@media (max-width: 800px) {
+  .ps__form .ps__row { grid-template-columns: 1fr; }
+}
+
+.ps__field { display: grid; gap: 6px; }
+.ps__field input,
+.ps__field select {
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+
+.ps__actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 8px; }
+
+/* Buttons */
+.ps__btn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform .05s ease, filter .15s ease, background-color .15s ease, border-color .15s ease;
+}
+.ps__btn:active { transform: translateY(1px); }
+.ps__btn:disabled { opacity: .7; cursor: default; }
+
+.ps__alert {
+  padding: 10px 12px;
+  border-radius: 12px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* ---------- LIGHT THEME (yellow accent) ---------- */
+/* Add `ps--light` to the same element as ps__container in JSX */
+.ps__container.ps--light {
+  /* page background */
+  background: linear-gradient(180deg, #f9fafb 0%, #f3f4f6 100%);
+  color: #111827; /* slate-900 */
+}
+
+.ps--light .ps__avatar {
+  width: 56px; height: 56px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-weight: 700; font-size: 20px;
+  color: #111827;
+  background: #fde68a;             /* amber-200 */
+  border: 1px solid #fcd34d;        /* amber-300 */
+  box-shadow: 0 6px 16px rgba(148, 121, 0, 0.25);
+}
+
+.ps--light .ps__titleGroup h2 { color: #0f172a; }  /* slate-900 */
+.ps--light .ps__muted { color: #6b7280; }          /* slate-500 */
+
+/* Cards */
+.ps--light .ps__card {
+  background: #ffffff;
+  border-color: #e5e7eb; /* slate-200 */
+  color: #111827;
+}
+
+/* Inputs */
+.ps--light .ps__field label { font-size: 13px; color: #6b7280; }
+.ps--light .ps__field input,
+.ps--light .ps__field select {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;   /* slate-300 */
+}
+.ps--light .ps__field input:disabled { background: #f3f4f6; color: #6b7280; }
+.ps--light .ps__field input::placeholder { color: #9ca3af; }
+
+.ps--light .ps__field input:focus,
+.ps--light .ps__field select:focus {
+  border-color: #ffd633;                 /* UOM yellow */
+  box-shadow: 0 0 0 4px rgba(255, 214, 51, 0.25);
+}
+
+/* Buttons (yellow primary) */
+.ps--light .ps__btn--primary {
+  background: #ffd633;  /* your accent */
+  color: #111827;
+  border-color: #f0c800;
+}
+.ps--light .ps__btn--primary:hover { filter: brightness(0.98); }
+.ps--light .ps__btn--primary:active { filter: brightness(0.95); }
+
+/* Danger Zone */
+.ps--light .ps__dangerZone h3 { margin: 0 0 6px; color: #991b1b; } /* red-800 */
+.ps--light .ps__btn--danger {
+  background: #dc2626;   /* red-600 */
+  color: #fff;
+  border-color: #ef4444; /* red-500 */
+}
+.ps--light .ps__btn--danger:hover { filter: brightness(1.05); }
+
+/* Alerts */
+.ps--light .ps__alert--error {
+  background: #fee2e2;    /* red-100 */
+  border: 1px solid #fca5a5; /* red-300 */
+  color: #7f1d1d;         /* red-900 */
+}
+.ps--light .ps__alert--ok {
+  background: #ecfccb;     /* lime-100 */
+  border: 1px solid #a3e635;/* lime-400 */
+  color: #365314;          /* lime-900 */
+}
